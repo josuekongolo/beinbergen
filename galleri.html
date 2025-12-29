@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="nb-NO">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galleri med våre prosjekter - Se eksempler på fiskebein, chevron og mønstergulv i Bergen og Vestland. .Bein Bergen AS.">
+  <meta name="keywords" content="fiskebein galleri, mønstergulv bilder, parkett prosjekter bergen">
+
+  <title>Galleri | .Bein Bergen AS</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header header--transparent">
+    <div class="container">
+      <div class="header__inner">
+        <a href="index.html" class="header__logo">
+          <span class="header__logo-text"><span class="dot">.</span>BEIN</span>
+          <span class="header__logo-sub">BERGEN</span>
+        </a>
+
+        <nav class="header__nav">
+          <a href="index.html" class="header__nav-link">Hjem</a>
+          <a href="tjenester.html" class="header__nav-link">Tjenester</a>
+          <a href="galleri.html" class="header__nav-link header__nav-link--active">Galleri</a>
+          <a href="om-oss.html" class="header__nav-link">Om oss</a>
+          <a href="kontakt.html" class="header__nav-link header__cta">Kontakt</a>
+        </nav>
+
+        <button class="header__toggle" aria-label="Meny" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav">
+    <div class="mobile-nav__overlay"></div>
+    <div class="mobile-nav__inner">
+      <nav class="mobile-nav__menu">
+        <a href="index.html" class="mobile-nav__link">Hjem</a>
+        <a href="tjenester.html" class="mobile-nav__link">Tjenester</a>
+        <a href="galleri.html" class="mobile-nav__link mobile-nav__link--active">Galleri</a>
+        <a href="om-oss.html" class="mobile-nav__link">Om oss</a>
+        <a href="kontakt.html" class="mobile-nav__link">Kontakt</a>
+      </nav>
+      <div class="mobile-nav__contact">
+        <a href="tel:+4740000000">400 00 000</a>
+        <a href="mailto:post@beinbergen.no">post@beinbergen.no</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="page-hero__bg herringbone-pattern"></div>
+      <div class="container">
+        <div class="page-hero__content fade-in">
+          <span class="page-hero__label">Våre Prosjekter</span>
+          <h1 class="page-hero__title">Galleri</h1>
+          <p class="page-hero__text">Utforsk våre ferdige prosjekter og la deg inspirere av mulighetene.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section section--white">
+      <div class="container">
+        <!-- Filters -->
+        <div class="gallery-filters fade-in">
+          <button class="filter-btn filter-btn--active" data-filter="all">Alle</button>
+          <button class="filter-btn" data-filter="fiskebein">Fiskebein</button>
+          <button class="filter-btn" data-filter="chevron">Chevron</button>
+          <button class="filter-btn" data-filter="monster">Mønster</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+          <!-- Item 1 -->
+          <article class="gallery-item fade-in" data-type="fiskebein">
+            <div class="gallery-item__image">
+              <img src="https://placehold.co/600x450/C4A35A/1B365D?text=Villa+Paradis" alt="Villa Paradis - Fiskebeinsgulv i eik" loading="lazy">
+            </div>
+            <div class="gallery-item__overlay">
+              <span class="gallery-item__type">Fiskebein</span>
+              <h3 class="gallery-item__title">Villa Paradis</h3>
+              <p class="gallery-item__location">Bergen - 120 kvm</p>
+            </div>
+          </article>
+
+          <!-- Item 2 -->
+          <article class="gallery-item fade-in" data-type="chevron">
+            <div class="gallery-item__image">
+              <img src="https://placehold.co/600x450/1B365D/C4A35A?text=Moderne+Leilighet" alt="Chevron-gulv i moderne leilighet" loading="lazy">
+            </div>
+            <div class="gallery-item__overlay">
+              <span class="gallery-item__type">Chevron</span>
+              <h3 class="gallery-item__title">Moderne Leilighet</h3>
+              <p class="gallery-item__location">Askøy - 85 kvm</p>
+            </div>
+          </article>
+
+          <!-- Item 3 -->
+          <article class="gallery-item fade-in" data-type="monster">
+            <div class="gallery-item__image">
+              <img src="https://placehold.co/600x450/C4A35A/1B365D?text=Historisk+Bygård" alt="Versailles-mønster i historisk bygård" loading="lazy">
+            </div>
+            <div class="gallery-item__overlay">
+              <span class="gallery-item__type">Versailles</span>
+              <h3 class="gallery-item__title">Historisk Bygård</h3>
+              <p class="gallery-item__location">Sentrum - 200 kvm</p>
+            </div>
+          </article>
+
+          <!-- Item 4 -->
+          <article class="gallery-item fade-in" data-type="fiskebein">
+            <div class="gallery-item__image">
+              <img src="https://placehold.co/600x450/1B365D/C4A35A?text=Enebolig+Fana" alt="Fiskebein i enebolig Fana" loading="lazy">
+            </div>
+            <div class="gallery-item__overlay">
+              <span class="gallery-item__type">Fiskebein</span>
+              <h3 class="gallery-item__title">Enebolig</h3>
+              <p class="gallery-item__location">Fana - 150 kvm</p>
+            </div>
+          </article>
+
+          <!-- Item 5 -->
+          <article class="gallery-item fade-in" data-type="chevron">
+            <div class="gallery-item__image">
+              <img src="https://placehold.co/600x450/C4A35A/1B365D?text=Stue+Sandviken" alt="Chevron i stue Sandviken" loading="lazy">
+            </div>
+            <div class="gallery-item__overlay">
+              <span class="gallery-item__type">Chevron</span>
+              <h3 class="gallery-item__title">Stue Renovering</h3>
+              <p class="gallery-item__location">Sandviken - 45 kvm</p>
+            </div>
+          </article>
+
+          <!-- Item 6 -->
+          <article class="gallery-item fade-in" data-type="monster">
+            <div class="gallery-item__image">
+              <img src="https://placehold.co/600x450/1B365D/C4A35A?text=Kontor+Sentrum" alt="Hollandske ruter på kontor" loading="lazy">
+            </div>
+            <div class="gallery-item__overlay">
+              <span class="gallery-item__type">Hollandske Ruter</span>
+              <h3 class="gallery-item__title">Kontorlokaler</h3>
+              <p class="gallery-item__location">Sentrum - 300 kvm</p>
+            </div>
+          </article>
+
+          <!-- Item 7 -->
+          <article class="gallery-item fade-in" data-type="fiskebein">
+            <div class="gallery-item__image">
+              <img src="https://placehold.co/600x450/C4A35A/1B365D?text=Stue+Nordnes" alt="Fiskebein i stue Nordnes" loading="lazy">
+            </div>
+            <div class="gallery-item__overlay">
+              <span class="gallery-item__type">Fiskebein</span>
+              <h3 class="gallery-item__title">Leilighet</h3>
+              <p class="gallery-item__location">Nordnes - 65 kvm</p>
+            </div>
+          </article>
+
+          <!-- Item 8 -->
+          <article class="gallery-item fade-in" data-type="chevron">
+            <div class="gallery-item__image">
+              <img src="https://placehold.co/600x450/1B365D/C4A35A?text=Villa+Øygarden" alt="Chevron i villa Øygarden" loading="lazy">
+            </div>
+            <div class="gallery-item__overlay">
+              <span class="gallery-item__type">Chevron</span>
+              <h3 class="gallery-item__title">Nybygg Villa</h3>
+              <p class="gallery-item__location">Øygarden - 180 kvm</p>
+            </div>
+          </article>
+
+          <!-- Item 9 -->
+          <article class="gallery-item fade-in" data-type="fiskebein">
+            <div class="gallery-item__image">
+              <img src="https://placehold.co/600x450/C4A35A/1B365D?text=Gang+Alver" alt="Fiskebein i gang Alver" loading="lazy">
+            </div>
+            <div class="gallery-item__overlay">
+              <span class="gallery-item__type">Fiskebein</span>
+              <h3 class="gallery-item__title">Entré & Gang</h3>
+              <p class="gallery-item__location">Alver - 25 kvm</p>
+            </div>
+          </article>
+
+          <!-- Item 10 -->
+          <article class="gallery-item fade-in" data-type="monster">
+            <div class="gallery-item__image">
+              <img src="https://placehold.co/600x450/1B365D/C4A35A?text=Spisestue+Os" alt="Mønstergulv i spisestue Os" loading="lazy">
+            </div>
+            <div class="gallery-item__overlay">
+              <span class="gallery-item__type">Mønster</span>
+              <h3 class="gallery-item__title">Spisestue</h3>
+              <p class="gallery-item__location">Os - 40 kvm</p>
+            </div>
+          </article>
+
+          <!-- Item 11 -->
+          <article class="gallery-item fade-in" data-type="chevron">
+            <div class="gallery-item__image">
+              <img src="https://placehold.co/600x450/C4A35A/1B365D?text=Stue+Åsane" alt="Chevron i stue Åsane" loading="lazy">
+            </div>
+            <div class="gallery-item__overlay">
+              <span class="gallery-item__type">Chevron</span>
+              <h3 class="gallery-item__title">Stor Stue</h3>
+              <p class="gallery-item__location">Åsane - 55 kvm</p>
+            </div>
+          </article>
+
+          <!-- Item 12 -->
+          <article class="gallery-item fade-in" data-type="fiskebein">
+            <div class="gallery-item__image">
+              <img src="https://placehold.co/600x450/1B365D/C4A35A?text=Soverom+Landås" alt="Fiskebein i soverom Landås" loading="lazy">
+            </div>
+            <div class="gallery-item__overlay">
+              <span class="gallery-item__type">Fiskebein</span>
+              <h3 class="gallery-item__title">Hovedsoverom</h3>
+              <p class="gallery-item__location">Landås - 20 kvm</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Inspiration Section -->
+    <section class="section section--cream">
+      <div class="container">
+        <div class="section-header text-center fade-in">
+          <span class="section-label">Inspirasjon</span>
+          <h2 class="section-title">La deg inspirere</h2>
+          <p class="section-text">Hvert prosjekt er unikt. Vi tilpasser gulvet til ditt rom, din stil og dine ønsker.</p>
+        </div>
+
+        <div class="why-us__grid fade-in">
+          <div class="why-us-card">
+            <div class="why-us-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                <path d="M2 17l10 5 10-5"/>
+                <path d="M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="why-us-card__title">Skreddersydd design</h3>
+              <p class="why-us-card__text">Vi tilpasser mønster, størrelse og farge til akkurat ditt rom.</p>
+            </div>
+          </div>
+
+          <div class="why-us-card">
+            <div class="why-us-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="why-us-card__title">Erfaring siden 2010</h3>
+              <p class="why-us-card__text">Over 15 års erfaring med eksklusive gulvløsninger i Bergen.</p>
+            </div>
+          </div>
+
+          <div class="why-us-card">
+            <div class="why-us-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <polyline points="9 12 11 14 15 10"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="why-us-card__title">Kvalitetsgaranti</h3>
+              <p class="why-us-card__text">Vi står for kvalitet og gir garanti på alt vårt arbeid.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta section">
+      <div class="cta__bg herringbone-pattern"></div>
+      <div class="container">
+        <div class="cta__content fade-in">
+          <h2 class="cta__title">Liker du det du ser?</h2>
+          <p class="cta__text">Kontakt oss for en uforpliktende samtale om ditt gulvprosjekt.</p>
+          <div class="cta__buttons">
+            <a href="kontakt.html" class="btn btn--primary">Kontakt oss</a>
+            <a href="tjenester.html" class="btn btn--outline-white">Se tjenester</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox">
+    <button class="lightbox__close" aria-label="Lukk">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="18" y1="6" x2="6" y2="18"/>
+        <line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+    <button class="lightbox__nav lightbox__prev" aria-label="Forrige">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="15 18 9 12 15 6"/>
+      </svg>
+    </button>
+    <button class="lightbox__nav lightbox__next" aria-label="Neste">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="9 18 15 12 9 6"/>
+      </svg>
+    </button>
+    <div class="lightbox__content">
+      <img src="" alt="">
+      <div class="lightbox__info">
+        <span class="lightbox__info-type"></span>
+        <h3 class="lightbox__info-title"></h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo">
+            <span class="footer__logo-text"><span class="dot">.</span>BEIN</span>
+            <span class="footer__logo-sub">BERGEN</span>
+          </a>
+          <p class="footer__tagline">Tidløs eleganse for ditt hjem. Spesialister på fiskebein og mønstergulv.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__nav">
+          <h4>Navigasjon</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="tjenester.html">Tjenester</a></li>
+            <li><a href="galleri.html">Galleri</a></li>
+            <li><a href="om-oss.html">Om oss</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__nav">
+          <h4>Tjenester</h4>
+          <ul class="footer__links">
+            <li><a href="tjenester.html#fiskebein">Fiskebein</a></li>
+            <li><a href="tjenester.html#chevron">Chevron</a></li>
+            <li><a href="tjenester.html#monster">Mønstergulv</a></li>
+            <li><a href="tjenester.html#sliping">Gulvsliping</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__contact">
+          <h4>Kontakt</h4>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>Blomhaugane 53B<br>5943 Austrheim</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <a href="tel:+4740000000">400 00 000</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <a href="mailto:post@beinbergen.no">post@beinbergen.no</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2025 .Bein Bergen AS. Alle rettigheter reservert.</p>
+        <p class="footer__org">Org.nr: 935 845 114</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

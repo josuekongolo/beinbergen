@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="nb-NO">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kontakt .Bein Bergen AS for tilbud på fiskebein, chevron og mønstergulv. Vi dekker Bergen, Nordhordland og hele Vestland.">
+  <meta name="keywords" content="kontakt gulvlegger bergen, fiskebein tilbud, mønstergulv vestland">
+
+  <title>Kontakt Oss | .Bein Bergen AS</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header header--transparent">
+    <div class="container">
+      <div class="header__inner">
+        <a href="index.html" class="header__logo">
+          <span class="header__logo-text"><span class="dot">.</span>BEIN</span>
+          <span class="header__logo-sub">BERGEN</span>
+        </a>
+
+        <nav class="header__nav">
+          <a href="index.html" class="header__nav-link">Hjem</a>
+          <a href="tjenester.html" class="header__nav-link">Tjenester</a>
+          <a href="galleri.html" class="header__nav-link">Galleri</a>
+          <a href="om-oss.html" class="header__nav-link">Om oss</a>
+          <a href="kontakt.html" class="header__nav-link header__nav-link--active header__cta">Kontakt</a>
+        </nav>
+
+        <button class="header__toggle" aria-label="Meny" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav">
+    <div class="mobile-nav__overlay"></div>
+    <div class="mobile-nav__inner">
+      <nav class="mobile-nav__menu">
+        <a href="index.html" class="mobile-nav__link">Hjem</a>
+        <a href="tjenester.html" class="mobile-nav__link">Tjenester</a>
+        <a href="galleri.html" class="mobile-nav__link">Galleri</a>
+        <a href="om-oss.html" class="mobile-nav__link">Om oss</a>
+        <a href="kontakt.html" class="mobile-nav__link mobile-nav__link--active">Kontakt</a>
+      </nav>
+      <div class="mobile-nav__contact">
+        <a href="tel:+4740000000">400 00 000</a>
+        <a href="mailto:post@beinbergen.no">post@beinbergen.no</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="page-hero__bg herringbone-pattern"></div>
+      <div class="container">
+        <div class="page-hero__content fade-in">
+          <span class="page-hero__label">Ta kontakt</span>
+          <h1 class="page-hero__title">Kontakt Oss</h1>
+          <p class="page-hero__text">Vi ser frem til å høre fra deg og hjelpe med ditt gulvprosjekt.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section section">
+      <div class="container">
+        <div class="contact__grid">
+          <!-- Contact Form -->
+          <div class="contact-form fade-in-left">
+            <h2 class="contact-form__title">Send oss en melding</h2>
+            <form>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Navn *</label>
+                  <input type="text" id="name" name="name" required placeholder="Ditt fulle navn">
+                  <span class="form-error">Vennligst oppgi ditt navn</span>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Telefon</label>
+                  <input type="tel" id="phone" name="phone" placeholder="Ditt telefonnummer">
+                  <span class="form-error">Vennligst oppgi et gyldig telefonnummer</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">E-post *</label>
+                <input type="email" id="email" name="email" required placeholder="din@epost.no">
+                <span class="form-error">Vennligst oppgi en gyldig e-postadresse</span>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="project-type">Prosjekttype</label>
+                  <select id="project-type" name="project-type">
+                    <option value="">Velg type...</option>
+                    <option value="fiskebein">Fiskebein</option>
+                    <option value="chevron">Chevron</option>
+                    <option value="monstergulv">Mønstergulv</option>
+                    <option value="gulvsliping">Gulvsliping</option>
+                    <option value="annet">Annet</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="area">Areal (kvm)</label>
+                  <input type="number" id="area" name="area" placeholder="ca. antall kvm">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Melding *</label>
+                <textarea id="message" name="message" required placeholder="Fortell oss om ditt prosjekt..."></textarea>
+                <span class="form-error">Meldingen må være minst 10 tegn</span>
+              </div>
+
+              <button type="submit" class="btn btn--primary">Send melding</button>
+            </form>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="contact-info fade-in-right">
+            <h2 class="contact-info__title">Kontaktinformasjon</h2>
+
+            <div class="contact-info__item">
+              <div class="contact-info__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div>
+                <span class="contact-info__label">Adresse</span>
+                <p class="contact-info__value">Blomhaugane 53B<br>5943 Austrheim</p>
+              </div>
+            </div>
+
+            <div class="contact-info__item">
+              <div class="contact-info__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </div>
+              <div>
+                <span class="contact-info__label">Telefon</span>
+                <p class="contact-info__value"><a href="tel:+4740000000">400 00 000</a></p>
+              </div>
+            </div>
+
+            <div class="contact-info__item">
+              <div class="contact-info__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div>
+                <span class="contact-info__label">E-post</span>
+                <p class="contact-info__value"><a href="mailto:post@beinbergen.no">post@beinbergen.no</a></p>
+              </div>
+            </div>
+
+            <div class="contact-info__item">
+              <div class="contact-info__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </div>
+              <div>
+                <span class="contact-info__label">Åpningstider</span>
+                <p class="contact-info__value">Mandag - Fredag<br>07:00 - 16:00</p>
+              </div>
+            </div>
+
+            <div class="contact-info__item">
+              <div class="contact-info__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                </svg>
+              </div>
+              <div>
+                <span class="contact-info__label">Organisasjonsnummer</span>
+                <p class="contact-info__value">935 845 114</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Area -->
+    <section class="service-area section">
+      <div class="container">
+        <div class="service-area__grid">
+          <div class="fade-in-left">
+            <span class="section-label">Vårt Dekningsområde</span>
+            <h2 class="section-title">Vi dekker hele Vestland</h2>
+            <p class="section-text">Fra vårt lokale tilhold i Austrheim betjener vi Bergen, Nordhordland og hele Vestland-regionen.</p>
+          </div>
+          <div class="fade-in-right">
+            <ul class="service-area__list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                Bergen
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                Austrheim
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                Alver
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                Askøy
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                Øygarden
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                Os / Bjørnafjorden
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                Lindås
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                Nordhordland
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section class="contact-map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15660.123456789!2d4.8011!3d60.7594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNjDCsDQ1JzMzLjgiTiA0wrA0OCcwNC4wIkU!5e0!3m2!1sno!2sno!4v1234567890"
+        width="100%"
+        height="100%"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Kart til .Bein Bergen AS">
+      </iframe>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo">
+            <span class="footer__logo-text"><span class="dot">.</span>BEIN</span>
+            <span class="footer__logo-sub">BERGEN</span>
+          </a>
+          <p class="footer__tagline">Tidløs eleganse for ditt hjem. Spesialister på fiskebein og mønstergulv.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__nav">
+          <h4>Navigasjon</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="tjenester.html">Tjenester</a></li>
+            <li><a href="galleri.html">Galleri</a></li>
+            <li><a href="om-oss.html">Om oss</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__nav">
+          <h4>Tjenester</h4>
+          <ul class="footer__links">
+            <li><a href="tjenester.html#fiskebein">Fiskebein</a></li>
+            <li><a href="tjenester.html#chevron">Chevron</a></li>
+            <li><a href="tjenester.html#monster">Mønstergulv</a></li>
+            <li><a href="tjenester.html#sliping">Gulvsliping</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__contact">
+          <h4>Kontakt</h4>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>Blomhaugane 53B<br>5943 Austrheim</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <a href="tel:+4740000000">400 00 000</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <a href="mailto:post@beinbergen.no">post@beinbergen.no</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2025 .Bein Bergen AS. Alle rettigheter reservert.</p>
+        <p class="footer__org">Org.nr: 935 845 114</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
