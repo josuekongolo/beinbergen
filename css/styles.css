@@ -2040,6 +2040,120 @@ p:last-child { margin-bottom: 0; }
 }
 
 /* ========================================
+   Mobile Optimizations (max-width: 480px)
+   ======================================== */
+@media (max-width: 480px) {
+  .hero__title {
+    font-size: 1.75rem;
+  }
+
+  .hero__text {
+    font-size: 0.9375rem;
+  }
+
+  .hero__buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero__buttons .btn {
+    width: 100%;
+  }
+
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.8125rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-label {
+    font-size: 0.6875rem;
+  }
+
+  .intro__image-accent {
+    display: none;
+  }
+
+  .service-card {
+    padding: var(--spacing-sm);
+  }
+
+  .service-card__icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .why-section__list li {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .why-section__icon {
+    margin: 0 auto;
+  }
+
+  .testimonial__inner {
+    padding: var(--spacing-sm);
+  }
+
+  .testimonial__quote {
+    font-size: 1rem;
+  }
+
+  .testimonial__author {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .testimonial__info {
+    text-align: center;
+  }
+
+  .cta__buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cta__buttons .btn {
+    width: 100%;
+  }
+
+  .footer__grid {
+    text-align: center;
+  }
+
+  .footer__brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__tagline {
+    text-align: center;
+  }
+
+  .footer__social {
+    justify-content: center;
+  }
+
+  .footer__contact-item {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .project-card__content {
+    padding: var(--spacing-xs);
+  }
+
+  .project-card__title {
+    font-size: 0.9375rem;
+  }
+}
+
+/* ========================================
    Accessibility
    ======================================== */
 .sr-only {
