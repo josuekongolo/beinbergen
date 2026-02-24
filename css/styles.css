@@ -1329,9 +1329,22 @@ p:last-child { margin-bottom: 0; }
   color: var(--color-gray);
 }
 
+.testimonial-card__stars {
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.testimonial-card__stars svg {
+  width: 18px;
+  height: 18px;
+  color: var(--color-accent);
+}
+
 @media (min-width: 768px) {
   .testimonials__grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -2355,6 +2368,10 @@ p:last-child { margin-bottom: 0; }
   .about-story__grid {
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-lg);
+  }
+
+  .about-story__grid--reverse .about-story__image {
+    order: -1;
   }
 
   .philosophy__grid {
