@@ -412,7 +412,7 @@ function initBeforeAfterSlider() {
     function updatePosition(x) {
       var rect = slider.getBoundingClientRect();
       var pos = (x - rect.left) / rect.width;
-      pos = Math.max(0.05, Math.min(0.95, pos));
+      pos = Math.max(0, Math.min(1, pos));
       var pct = pos * 100;
       before.style.clipPath = 'inset(0 ' + (100 - pct) + '% 0 0)';
       handle.style.left = pct + '%';
