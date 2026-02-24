@@ -691,17 +691,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 .hero-split__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.25);
-  transition: background var(--transition-normal);
-}
-
-.hero-split__panel:hover .hero-split__overlay {
-  background: rgba(0, 0, 0, 0.15);
+  display: none;
 }
 
 .hero-split__content {
