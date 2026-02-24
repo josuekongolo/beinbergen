@@ -284,7 +284,8 @@ p:last-child { margin-bottom: 0; }
 }
 
 .header--transparent {
-  background-color: transparent;
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-sm);
 }
 
 .header--solid {
@@ -337,7 +338,7 @@ p:last-child { margin-bottom: 0; }
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 0.1em;
-  color: var(--color-white);
+  color: var(--color-primary);
   transition: color var(--transition-normal);
 }
 
@@ -369,7 +370,7 @@ p:last-child { margin-bottom: 0; }
   font-weight: 500;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: var(--color-white);
+  color: var(--color-primary);
   padding: 0.5rem 0;
   position: relative;
   transition: color var(--transition-normal);
@@ -435,7 +436,7 @@ p:last-child { margin-bottom: 0; }
   display: block;
   width: 100%;
   height: 2px;
-  background-color: var(--color-white);
+  background-color: var(--color-primary);
   transition: all var(--transition-normal);
 }
 
