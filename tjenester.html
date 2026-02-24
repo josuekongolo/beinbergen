@@ -118,7 +118,28 @@
       <div class="container">
         <div class="service-detail fade-in">
           <div class="service-detail__image">
-            <img src="images/hero-hallway.jpg" alt="Profesjonell gulvsliping" loading="lazy">
+            <div class="ba-slider" aria-label="Dra for å sammenligne før og etter">
+              <div class="ba-slider__after">
+                <img src="images/sliping.png" alt="Etter gulvsliping" loading="lazy" style="object-position: bottom;">
+              </div>
+              <div class="ba-slider__before">
+                <img src="images/sliping.png" alt="Før gulvsliping" loading="lazy" style="object-position: top;">
+              </div>
+              <div class="ba-slider__handle">
+                <div class="ba-slider__line"></div>
+                <div class="ba-slider__button">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15 18 9 12 15 6"/>
+                  </svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"/>
+                  </svg>
+                </div>
+                <div class="ba-slider__line"></div>
+              </div>
+              <span class="ba-slider__label ba-slider__label--before">Før</span>
+              <span class="ba-slider__label ba-slider__label--after">Etter</span>
+            </div>
           </div>
           <div class="service-detail__content">
             <span class="service-detail__label">Tjeneste 2</span>

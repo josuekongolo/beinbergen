@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
   initGalleryFilters();
   initLightbox();
   initSmoothScroll();
+  initBeforeAfterSlider();
 });
 
 /**
@@ -393,6 +394,61 @@ function initSmoothScroll() {
           behavior: 'smooth'
         });
       }
+    });
+  });
+}
+
+/**
+ * Before/After Slider
+ */
+function initBeforeAfterSlider() {
+  var sliders = document.querySelectorAll('.ba-slider');
+
+  sliders.forEach(function(slider) {
+    var before = slider.querySelector('.ba-slider__before');
+    var handle = slider.querySelector('.ba-slider__handle');
+    var isDragging = false;
+
+    function updatePosition(x) {
+      var rect = slider.getBoundingClientRect();
+      var pos = (x - rect.left) / rect.width;
+      pos = Math.max(0.05, Math.min(0.95, pos));
+      var pct = pos * 100;
+      before.style.clipPath = 'inset(0 ' + (100 - pct) + '% 0 0)';
+      handle.style.left = pct + '%';
+    }
+
+    slider.addEventListener('mousedown', function(e) {
+      isDragging = true;
+      updatePosition(e.clientX);
+      e.preventDefault();
+    });
+
+    document.addEventListener('mousemove', function(e) {
+      if (isDragging) {
+        updatePosition(e.clientX);
+        e.preventDefault();
+      }
+    });
+
+    document.addEventListener('mouseup', function() {
+      isDragging = false;
+    });
+
+    slider.addEventListener('touchstart', function(e) {
+      isDragging = true;
+      updatePosition(e.touches[0].clientX);
+    }, { passive: true });
+
+    document.addEventListener('touchmove', function(e) {
+      if (isDragging) {
+        updatePosition(e.touches[0].clientX);
+        e.preventDefault();
+      }
+    }, { passive: false });
+
+    document.addEventListener('touchend', function() {
+      isDragging = false;
     });
   });
 }
