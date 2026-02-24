@@ -85,24 +85,29 @@
   </div>
 
   <main>
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero__bg">
-        <img src="images/hero-living-room.jpg" alt="" loading="eager">
-        <div class="hero__bg-overlay"></div>
-      </div>
-      <div class="container">
-        <div class="hero__content fade-in">
-          <span class="hero__label">Fiskebeinsgulv i Bergen og Vestland</span>
-          <h1 class="hero__title">Salg, montering og gulvsliping</h1>
-          <p class="hero__text">Vi leverer og legger fiskebeinsgulv for alle hjem, og gir eksisterende tregulv nytt liv med profesjonell sliping.</p>
-          <div class="hero__buttons">
-            <a href="#tjenester" class="btn btn--primary">Se våre tjenester</a>
-            <a href="kontakt.html" class="btn btn--outline-white">Kontakt oss</a>
-          </div>
+    <!-- Hero: Two Services Split -->
+    <section class="hero-split" id="tjenester">
+      <div class="hero-split__panel hero-split__panel--left">
+        <img src="images/hero-living-room.jpg" alt="Fiskebeinsgulv i stue" loading="eager" class="hero-split__bg">
+        <div class="hero-split__overlay"></div>
+        <div class="hero-split__content">
+          <span class="hero-split__label">Tjeneste 1</span>
+          <h2 class="hero-split__title">Salg og montering</h2>
+          <p class="hero-split__text">Vi selger og legger fiskebeinsgulv for alle typer hjem – fra rådgivning til ferdig montert gulv.</p>
+          <a href="kontakt.html" class="btn btn--primary">Befaring</a>
         </div>
       </div>
-      <a href="#intro" class="hero__scroll" aria-label="Scroll ned">
+      <div class="hero-split__panel hero-split__panel--right">
+        <img src="images/hero-hallway.jpg" alt="Gulvsliping av tregulv" loading="eager" class="hero-split__bg">
+        <div class="hero-split__overlay"></div>
+        <div class="hero-split__content">
+          <span class="hero-split__label">Tjeneste 2</span>
+          <h2 class="hero-split__title">Gulvsliping</h2>
+          <p class="hero-split__text">Gi ditt eksisterende tregulv nytt liv. Vi sliper, behandler og fornyer alle typer tregulv.</p>
+          <a href="kontakt.html" class="btn btn--primary">Befaring</a>
+        </div>
+      </div>
+      <a href="#om-oss" class="hero-split__scroll" aria-label="Scroll ned">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M12 5v14M19 12l-7 7-7-7"/>
         </svg>
@@ -110,7 +115,7 @@
     </section>
 
     <!-- Introduction -->
-    <section id="intro" class="intro section">
+    <section id="om-oss" class="intro section">
       <div class="container">
         <div class="intro__grid">
           <div class="intro__content fade-in-left">
@@ -121,43 +126,9 @@
             <a href="om-oss.html" class="link-arrow">Les mer om oss</a>
           </div>
           <div class="intro__image fade-in-right">
-            <img src="images/hero-living-room.jpg" alt="Fiskebeinsgulv i stue med peis" loading="lazy">
+            <img src="images/hero-modern-living.jpg" alt="Fiskebeinsgulv i moderne stue" loading="lazy">
             <div class="intro__image-accent"></div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Two Services Split -->
-    <section id="tjenester" class="services-split section">
-      <div class="container">
-        <div class="section-header text-center fade-in">
-          <span class="section-label">Våre Tjenester</span>
-          <h2 class="section-title">Hva kan vi hjelpe deg med?</h2>
-        </div>
-
-        <div class="services-split__grid">
-          <article class="service-panel fade-in">
-            <div class="service-panel__image">
-              <img src="images/hero-living-room.jpg" alt="Fiskebeinsgulv i stue" loading="lazy">
-            </div>
-            <div class="service-panel__content">
-              <h3 class="service-panel__title">Salg og montering</h3>
-              <p class="service-panel__text">Vi selger og legger fiskebeinsgulv for alle typer hjem. Fra rådgivning og materialvalg til ferdig montert gulv – vi tar oss av hele prosessen.</p>
-              <a href="kontakt.html" class="btn btn--primary">Befaring</a>
-            </div>
-          </article>
-
-          <article class="service-panel fade-in">
-            <div class="service-panel__image">
-              <img src="images/hero-hallway.jpg" alt="Gulvsliping" loading="lazy">
-            </div>
-            <div class="service-panel__content">
-              <h3 class="service-panel__title">Gulvsliping</h3>
-              <p class="service-panel__text">Gi ditt eksisterende tregulv nytt liv. Vi sliper, behandler og fornyer alle typer tregulv – slik at de ser ut som nye igjen.</p>
-              <a href="kontakt.html" class="btn btn--primary">Befaring</a>
-            </div>
-          </article>
         </div>
       </div>
     </section>
