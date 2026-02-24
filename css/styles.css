@@ -729,6 +729,15 @@ p:last-child { margin-bottom: 0; }
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
 }
 
+.hero-split__subtitle {
+  display: block;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: var(--spacing-sm);
+  letter-spacing: 0.05em;
+}
+
 .hero-split__text {
   color: rgba(255, 255, 255, 0.9);
   font-size: clamp(0.9rem, 1.5vw, 1.0625rem);
