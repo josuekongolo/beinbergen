@@ -816,6 +816,10 @@ p:last-child { margin-bottom: 0; }
 /* ========================================
    Page Hero (Inner Pages)
    ======================================== */
+[id] {
+  scroll-margin-top: var(--header-height);
+}
+
 .page-hero {
   position: relative;
   padding: calc(var(--header-height) + var(--spacing-lg)) 0 var(--spacing-lg);

@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
   initGalleryFilters();
   initLightbox();
   initSmoothScroll();
+  initHashScroll();
   initBeforeAfterSlider();
 });
 
@@ -396,6 +397,24 @@ function initSmoothScroll() {
       }
     });
   });
+}
+
+/**
+ * Hash Scroll - Adjust scroll on page load when navigating with a hash
+ */
+function initHashScroll() {
+  var hash = window.location.hash;
+  if (!hash) return;
+
+  var target = document.querySelector(hash);
+  if (!target) return;
+
+  // Delay to let browser finish its default scroll
+  setTimeout(function() {
+    var headerHeight = document.querySelector('.header').offsetHeight;
+    var targetPosition = target.getBoundingClientRect().top + window.scrollY - headerHeight;
+    window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+  }, 100);
 }
 
 /**
